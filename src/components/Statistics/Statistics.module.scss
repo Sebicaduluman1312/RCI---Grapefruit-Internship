@@ -1,0 +1,79 @@
+@import '../../scss/utils/variables';
+
+// De mutat global
+
+.wrapper{
+    max-width: 100%;
+    color: $rci-orange;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+    .statisticContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
+        font-size: 20px;
+        text-align: left;
+        margin: 0;
+    
+        &::before{
+            content: "";
+            display: block;
+            width: 160px; 
+            height: 8px; 
+            background-color: $rci-orange;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 410px){
+            font-size: 16px;
+            &::before{
+                width: 120px;
+            }
+        }
+    }
+    
+    p {
+        font-size: 48px;
+        text-align: left;
+        margin: 0;
+
+        @media (max-width: 410px){
+            font-size: 35px;
+        }
+    }
+    
+    .span {
+        font-size: 16px;
+        text-align: left;
+        margin: 0;
+
+        @media (max-width: 410px){
+            font-size: 12px;
+        }
+    }
+
+    // Variants
+    //     &.certificates{
+    //         .h4{
+
+    //             // Responsive
+    //         }
+        
+    //         p{
+        
+    //             // Responsive
+    //         }
+        
+    //         span{
+        
+    //             // Responsive
+    //         }
+    //     }
+}
+

@@ -1,0 +1,19 @@
+.wrapper{
+    width: 100%;
+    padding: 10px 0 0 0;
+    background: #fff;
+}
+
+.content{
+    width: 100%;
+    padding-bottom: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media(max-width: 700px){
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,39 @@
+.wrapper{
+    width: 100%;
+    margin: 0;
+    padding: 75px 0 50px 0;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @media (max-width: 615px){
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        margin-top: 25px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+
+        font-size: 20px;
+
+        margin: 50px;
+        padding: 10px 25px;
+
+        border: 1px solid black;
+        border-radius: 200px;
+
+        @media (max-width: 600px){
+            margin: 0;
+        }
+
+    }
+}

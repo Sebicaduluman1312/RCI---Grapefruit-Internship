@@ -1,0 +1,36 @@
+.wrapper{
+    width: 100%;
+    padding: 50px 0 100px 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: #A7CAE0;
+
+    h3 {
+        margin-top: 25px;
+    }
+
+    .infos{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &:nth-child(1){
+            a {
+                text-decoration: none;
+            }
+        }
+    
+        h4 {
+            font-size: 32px;
+            margin: 0 0 20px 0;
+        }
+
+        a {
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}

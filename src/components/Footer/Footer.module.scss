@@ -1,0 +1,135 @@
+.wrapper{
+    position: relative;
+
+    width: 100%;
+    padding: 50px 0 50px 0;
+    margin-top: -30px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    
+    background-color: #222954;
+    background-image: url('./assets/footerBackground.png');
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    color: white;
+
+    .footerContent{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media(max-width: 1100px){
+            flex-direction: column;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topics{
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                padding-bottom: 20px;
+
+                @media(max-width: 400px){
+                    font-size: 16px;
+                }
+
+                svg{
+                    display: inline-block;
+                    height: 24px;
+                    width: 24px;
+                    margin-left: 10px;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+
+        .pages{ 
+            li {
+                font-size: 20px;
+                padding-bottom: 20px;
+
+                @media(max-width: 400px){
+                    font-size: 16px;
+                }
+
+                a{
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .links{
+            font-size: 16px;
+            color: #AFAFAF;
+
+            li {
+                padding-bottom: 20px;
+
+                a{
+                    color: #AFAFAF;
+                    text-decoration: none;
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                svg {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+    }
+
+    .credentials{
+        width: 100%;
+        margin-top: 100px;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-top: 2px solid white;
+
+        a {
+            color: #BCDEFF;
+            margin-left: 10px;
+        }
+        .policy{
+            @media(max-width: 450px){
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media(max-width: 1100px){
+            margin-top: 50px;
+        }
+    }
+
+}

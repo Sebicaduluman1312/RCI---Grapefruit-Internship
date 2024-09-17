@@ -1,0 +1,14 @@
+.skeleton{
+    margin: 5% 0 0 5%;
+
+    .navSkeleton{
+
+        :global(.ant-skeleton-button){
+            min-width: 90vw;
+            width: 90vw;
+            height: 50px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+    }
+}

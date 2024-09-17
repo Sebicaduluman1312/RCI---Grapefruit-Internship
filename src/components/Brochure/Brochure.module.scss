@@ -1,0 +1,18 @@
+.wrapper{
+    width: 100%;
+    background: white;
+
+    .containerCenter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #ff6b00;
+        margin-left: 12px;
+    }
+
+}

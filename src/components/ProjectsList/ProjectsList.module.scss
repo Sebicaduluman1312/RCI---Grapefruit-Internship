@@ -1,0 +1,121 @@
+.wrapper{
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 720px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projectCard{
+        position: relative;
+        height: 500px;
+        width: 48%;
+        border-radius: 20px;
+        color: #fff;
+
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-size: 150%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: background-size 1s ease;
+
+        &:hover{
+            background-size: 180%;
+        }
+
+        @media (max-width: 720px) {
+            width: 100%;
+            height: auto;
+            background-size: cover;
+        }  
+
+        @media(max-width: 1000px){
+            background-size: cover;
+
+            &:hover{
+                background-size: cover;
+            }
+        }
+
+        .backgroundZoom {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+
+            border-radius: 20px;
+            z-index: 0;
+            
+        }
+
+        h4 {
+            position: relative;
+            font-size: 32px;
+            margin: 30px;
+            width: 70%;
+        }
+    
+        .blurredCard{
+            height: 160px;
+            max-width: 50%;
+
+            font-size: 20px;
+            padding: 0px 20px 30px 20px;
+            margin: 30px;
+            
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 12px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            @media (max-width: 1000px){
+                max-width: 70%;
+            }
+
+            @media (max-width: 720px) {
+                max-width: 100%;
+                height: auto;
+            }   
+
+            
+            p {
+                width: 70%;
+
+                @media (max-width: 720px) {
+                    width: 100%;
+                }   
+            }
+
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                svg {
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.exploreBtn {
+    margin-top: 51px;
+}
