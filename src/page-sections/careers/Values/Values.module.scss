@@ -1,0 +1,33 @@
+.wrapper{
+    width: 100%;
+    background: #fff;
+    padding: 0 0 50px 0;
+
+
+    .containerInline{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        @media(max-width: 995px){
+            flex-direction: column;
+        }
+
+        & > *{
+            width: 28%;
+
+            @media(max-width: 995px){
+                width: 100%;
+            }
+        }
+
+        p{
+            @media(max-width: 995px){
+                margin: 12px 0 30px 0;
+            }
+        }
+
+    }
+}
