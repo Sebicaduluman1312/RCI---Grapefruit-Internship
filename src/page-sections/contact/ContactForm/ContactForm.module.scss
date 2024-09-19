@@ -1,0 +1,249 @@
+.wrapper {
+    width: 100%;
+    background: white;
+    padding: 130px 0 130px 0;
+
+    @media(max-width: 797px){
+        padding: 65px 0 65px 0;
+    }
+
+    @media(max-width: 500px){
+        padding: 40px 0 40px 0;
+    }
+
+
+    .containerFlex {
+        width: 90%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media(max-width: 1000px){
+            flex-direction: column;
+        }
+
+        .content {
+            width: 36%;
+
+            @media(max-width: 1100px){
+                width: 45%;
+            }
+
+            @media(max-width: 1000px){
+                width: 100%;
+            }
+
+            h1 {
+                margin: 0;
+
+                font-size: 48px;
+            }
+
+            h3 {
+                margin: 56px 0 20px 0; 
+                font-size: 20px;
+
+                @media(max-width: 1000px){
+                    margin: 36px 0 10px 0;
+
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+
+            p{
+                margin: 10px 0 0 0;
+                font-size: 24px;
+            }
+
+            small{
+                font-size: 20px;
+            }
+
+            .underline{
+                text-decoration: underline;
+                color: #ff6b00;
+            }
+
+            .wrap{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+
+                @media(max-width: 1000px){
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+        
+            }
+
+        }
+    
+    
+        .form{
+            width: 50%;
+            font-size: 20px;
+
+            @media(max-width: 1000px){
+                width: 100%;
+                margin-top: 40px;
+                font-size: 18px;
+            }
+        
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            
+                input {
+                    width: 100%;
+
+                    border: none;
+                    border-bottom: 1px solid black;
+
+                    font-size: 20px;
+                    padding: 26px 0 26px 0;
+
+                    @media(max-width: 1000px){
+                        padding: 20px 0 20px 0;
+
+                    }
+
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+        
+                textarea {
+                    width: 100%;
+                    height: 100px;
+
+                    border: none;
+                    border-bottom: 1px solid black;
+                    
+                    font-size: 20px;
+                    padding: 70px 0 26px 0;
+
+                    resize: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .agreement {
+                    margin: 35px 0 35px 0;
+
+                    display: flex;
+                    align-items: center;
+
+                    input{
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 12px;
+                    }
+                
+                }
+
+                .select{
+                    width: 100%;
+                    border: none;
+
+                    :global(.ant-select-selector){
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: 1px solid black;
+                        
+                        font-size: 20px;
+                        padding: 26px 0 26px 0;
+
+                        &:hover {
+                            border-color: black;
+                            outline: none;
+                        }
+                    }
+
+                    :global(.ant-select-arrow){
+                        margin: 0;
+                        padding: 13px 0 0 0;
+                    }
+                }
+
+        
+                button {
+                    // width: 120px;
+
+                    color: #fff;
+                    background: #ff6b00;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    border-radius: 200px;
+                    border: none;
+
+                    cursor: pointer;
+
+                    &:hover{
+                        background: lighten($color: #ff6b00, $amount: 10%);
+                    }
+
+                    span{
+                        padding: 20px 0 20px 34px;
+                        margin-right: 3rem;
+                    }
+
+                    svg{
+                        height: 24px;
+                        width: 24px;
+                        padding: 20px 20px 20px 0;
+                    }
+
+                }
+
+            }
+    
+        }
+
+    }
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,5 +1,6 @@
 import background1 from './assets/background01.png';
 import background2 from './assets/background02.png';
+import background3 from './assets/background04.png';
 
 export const slides = [
     {
@@ -31,5 +32,12 @@ export const slideAbout = [
     {
         title: 'Domain experts, devoted and engaged',
         background: background2.src
+    }
+]
+
+export const slideContact = [
+    {
+        title: 'Contact us',
+        background: background3.src
     }
 ]

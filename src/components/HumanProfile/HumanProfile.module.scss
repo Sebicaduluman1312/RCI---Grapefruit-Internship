@@ -1,0 +1,107 @@
+.wrapper{
+    width: 100%;
+
+    .carousel {
+        width: 100%;
+        line-height: auto;
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+    
+            max-width: 160px;
+
+            @media(max-width: 450px){
+                max-width: 120px;
+            }
+    
+            .photo{
+                height: 160px;
+                width: 160px;
+                border-radius: 20px;
+    
+                background: #E2E2E2;
+    
+                margin: 0;
+                padding: 0;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media(max-width: 450px){
+                    height: 140px;
+                    width: 140px;
+                }
+                
+                img{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+    
+            p{
+                font-size: 24px;
+                margin: 24px 0 0 0;
+                padding: 0;
+
+                @media(max-width: 450px){
+                    font-size: 20px;
+                }
+            }
+    
+            small{
+                margin: 0;
+                padding: 0;
+    
+                font-size: 18px;
+                color: #ff6b00;
+
+                @media(max-width: 450px){
+                    font-size: 16px;
+                }
+            }
+        }
+
+        :global(.slick-slide > div) {
+            padding: 0;
+        }
+
+        :global(.slick-arrow) {
+            opacity: 1;
+            top: 85%;
+
+            &::after{
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        :global(.slick-next) {
+            color: #ff6b00;
+            inset-inline-start: 3%;
+
+            @media(max-width: 600px){
+                inset-inline-start: 5%;
+            }
+
+            &::after{
+                border-inline-width: 4px 0;
+                border-block-width: 4px 0;
+                border-radius: 2px;
+            }
+        }
+    
+        :global(.slick-prev) {
+            color: #ff6b00;
+            inset-inline-start: 0;
+
+            &::after{
+                border-inline-width: 4px 0;
+                border-block-width: 4px 0;
+                border-radius: 2px;
+            }
+        }
+    }
+}

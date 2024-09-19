@@ -17,6 +17,7 @@ import Certifications from "@/page-sections/about/Certifications/Certifications"
 import Discover from "@/page-sections/about/Discover/Discover";
 import Values from "@/page-sections/about/Values/Values";
 import History from "@/page-sections/about/History/History";
+import Team from "@/page-sections/about/Team/Team";
 
 
 export default function About() {
@@ -35,6 +36,7 @@ export default function About() {
                 <Values />
                 <Brochure downloadLink={image.src}/>
                 <History />
+                <Team />
 
             </BaseLayout>
         </>
