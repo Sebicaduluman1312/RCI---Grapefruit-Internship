@@ -10,12 +10,22 @@ import Tag from '../Tag';
 
 const Qualities = (props: QualitiesProps) => {
 
-    const { label, content} = props.data;
+    const { label, content, list} = props.data;
 
     return ( 
         <div className={styles.wrapper}>
             <Tag label={label} />
-            <p>{content}</p>
+            {
+                content && <p>{content}</p>
+            }
+            {
+                list && 
+                    <ul>
+                        {list.map((item, index) => (
+                            <li key={index}> {item} </li>
+                        ))}
+                    </ul>
+            }
         </div>
     );
 }
