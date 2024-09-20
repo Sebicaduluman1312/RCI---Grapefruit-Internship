@@ -33,6 +33,11 @@
         width: 59px;
         font-size: 18px;
         border: none;
+
+        &:focus{
+          outline: none;
+        }
+    
     }
 
     svg {

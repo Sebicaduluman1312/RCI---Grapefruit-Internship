@@ -1,0 +1,131 @@
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-90%);
+        opacity: 0;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+
+
+    background: #F7F7F7;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    position: absolute;
+    z-index: 2;
+
+    opacity: 0;
+
+    h1{
+        margin: 50px 0 50px 0;
+        font-size: 48px;
+
+        @media(max-width: 700px){
+            font-size: 36px;
+            margin: 35px 0 35px 0;
+        }
+    }
+
+    .spinContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spin{
+        margin: 0;
+        padding: 100px 0 100px 0;
+    }
+
+    .results{
+        margin: 25px 0 25px 0;
+
+        height: 40%;
+        overflow: auto;
+
+        @media(max-width: 700px){
+            margin: 10px 0 30px 0;
+        }
+
+        .result{
+            width: 65%;
+            display: flex;
+            align-items: center;
+
+            border-bottom: 1px solid #776868;
+            padding: 25px 0 25px 0;
+
+
+            @media(max-width: 1200px){
+                width: 100%;
+            }
+            
+            @media(max-width: 700px){
+                padding: 20px 0 20px 0;
+            }
+
+
+    
+            svg{
+                height: 24px;
+                width: 24px;
+
+                margin-right: 20px;
+
+                @media(max-width: 700px){
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+    
+            a{
+                text-decoration: none;
+                color: black;
+
+                font-size: 24px;
+
+                @media(max-width: 700px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    small{
+        font-size: 16px;
+        color: #AFAFAF;
+        padding-bottom: 70px;
+    }
+
+}
+
+.active {
+    display: block;
+    opacity: 1;
+    animation: slideDown 0.5s ease forwards;
+}
+
+.inactive {
+    animation: slideUp 0.5s ease forwards;
+}

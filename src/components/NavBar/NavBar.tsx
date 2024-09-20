@@ -13,7 +13,7 @@ import { CloseSvg } from '../../../public/icons/CloseSvg';
 
 const NavBar = (props: NavBarProps) => {
 
-    const {state, callback} = props;  
+    const {state, callbackMenu, callbackSearch} = props;  
     
 
     const handleClickMenu = () => {
@@ -29,8 +29,13 @@ const NavBar = (props: NavBarProps) => {
             document.body.style.overflowY = 'hidden';
         }
         
-        callback();
+        callbackMenu();
     }
+
+    const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+        callbackSearch(e.target.value);
+    }
+
 
     return ( 
         <div className={styles['navbar-content']}>
@@ -40,7 +45,7 @@ const NavBar = (props: NavBarProps) => {
                 </div>
                 <div className={styles['navbar-actions']}>
                     <SearchSvg />
-                    <input type="text" placeholder="Search"/>
+                    <input type="text" placeholder="Search" onChange={handleChangeInput}/>
                     {
                         state === false ?
                         <MenuSvg callback={handleClickMenu} />: 
