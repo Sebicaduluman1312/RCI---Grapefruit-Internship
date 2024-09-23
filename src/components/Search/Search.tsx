@@ -38,14 +38,13 @@ const Search = (props: SearchProps) => {
     const { searchKey, show } = props;
 
 
-    const [loadingResults, setLoadingResults] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        setLoadingResults(true);
+        setLoading(true);
 
         const timeout = setTimeout(() => {
-            setLoadingResults(false);
-            console.log('Results loaded');
+            setLoading(false);
         }, 3000);
 
         return () => clearTimeout(timeout);
@@ -73,7 +72,7 @@ const Search = (props: SearchProps) => {
                 <Tag label='Results'/>    
 
                 {
-                    loadingResults === true 
+                    loading
                         ?   <div className={styles.spinContainer}>
                                 <br />
                                 <SPIN_ANIMATION />

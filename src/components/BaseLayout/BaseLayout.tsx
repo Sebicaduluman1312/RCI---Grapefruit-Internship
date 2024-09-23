@@ -35,6 +35,10 @@ const BaseLayout = (props: BaseLayoutProps) => {
         }
     }
 
+    const handleCloseSearch =  () => {
+        setOpenSearch(false);
+    }
+
 
     return ( 
         <div>
@@ -44,7 +48,7 @@ const BaseLayout = (props: BaseLayoutProps) => {
 
             <Search show={openSearch} searchKey={keySearch}/>
             <Menu show={openMenu} callback={handleOpenMenu}/>
-            <NavBar state={openMenu} callbackMenu={handleOpenMenu} callbackSearch={handleOpenSearch}/>
+            <NavBar state={openMenu} callbackMenu={handleOpenMenu} callbackSearch={handleOpenSearch} callbackCloseSearch={handleCloseSearch}/>
 
             {props.children}
 

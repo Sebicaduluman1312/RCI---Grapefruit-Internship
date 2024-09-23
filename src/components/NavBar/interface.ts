@@ -1,5 +1,6 @@
 export interface NavBarProps {
     state: boolean,
-    callbackMenu: () => void;
-    callbackSearch: (param: string) => void
+    callbackMenu: () => void,
+    callbackSearch: (param: string) => void,
+    callbackCloseSearch: () => void,
 }
