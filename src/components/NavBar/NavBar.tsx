@@ -6,6 +6,7 @@ import { NavBarProps } from './interface';
 import { MenuSvg } from '../../../public/icons/MenuSvg';
 import { SearchSvg } from '../../../public/icons/SearchSvg';
 import { CloseSvg } from '../../../public/icons/CloseSvg';
+import { useState } from 'react';
 
 // Components
 
@@ -13,7 +14,9 @@ import { CloseSvg } from '../../../public/icons/CloseSvg';
 
 const NavBar = (props: NavBarProps) => {
 
-    const {state, callback} = props;  
+    const {state, callbackMenu, callbackSearch, callbackCloseSearch} = props;  
+
+    const [openInput, setOpenInput] = useState(false);
     
 
     const handleClickMenu = () => {
@@ -29,22 +32,49 @@ const NavBar = (props: NavBarProps) => {
             document.body.style.overflowY = 'hidden';
         }
         
-        callback();
+        callbackMenu();
     }
+
+    const handleChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+        callbackSearch(e.target.value);
+    }
+
+    const handleOpenInput = () => {
+        setOpenInput(true);
+    }
+
+    const handleCloseInput = () => {
+        setOpenInput(false);
+        callbackCloseSearch();
+    }
+
 
     return ( 
         <div className={styles['navbar-content']}>
             <div className={styles.navbar}>
-                <div className={styles.logo}>
-                    <img src={logo.src} alt="logo" className='logo'/>
-                </div>
+                {
+                    !openInput ? 
+                    <div className={styles.logo}>
+                        <img src={logo.src} alt="logo" className='logo'/>
+                    </div> : 
+                    <input type="text" placeholder="Search" onChange={handleChangeInput}/>
+                }
                 <div className={styles['navbar-actions']}>
-                    <SearchSvg />
-                    <input type="text" placeholder="Search"/>
+                    
                     {
-                        state === false ?
+                        !state? 
+                        (   
+                            !openInput?
+                            <SearchSvg callback={handleOpenInput}/> :
+                            <CloseSvg callback={handleCloseInput}/> 
+                        ) : <></>
+
+                    }
+
+                    {
+                        !openInput ? state === false ? 
                         <MenuSvg callback={handleClickMenu} />: 
-                        <CloseSvg callback={handleClickMenu}/>
+                        <CloseSvg callback={handleClickMenu}/> : <></>
                     }
                 </div>
             </div>

@@ -20,6 +20,20 @@
     border-radius: 72px;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.10);
     margin-top: 25px;
+
+    input {
+        height: 24px;
+        margin-left: 20px;
+        width: 50%;
+        font-size: 18px;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+    
+    }
+
 }
 
 .navbar-actions{
@@ -27,13 +41,6 @@
     align-items: center;
     gap: 15px;
     margin-right: 20px;
-
-    input {
-        height: 24px;
-        width: 59px;
-        font-size: 18px;
-        border: none;
-    }
 
     svg {
         height: 24px;

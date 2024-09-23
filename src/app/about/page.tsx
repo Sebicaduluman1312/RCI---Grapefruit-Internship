@@ -21,6 +21,7 @@ import Team from "@/page-sections/about/Team/Team";
 
 
 export default function About() {
+        
    return (
         <>
             <BaseLayout
