@@ -49,3 +49,10 @@ export const slideCareers = [
         background: background4.src
     }
 ]
+
+export const slideNews = [
+    {
+        title: 'News and insights',
+        background: background2.src
+    }
+]
