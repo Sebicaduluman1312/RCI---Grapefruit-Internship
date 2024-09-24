@@ -1,7 +1,7 @@
 import styles from './Company.module.scss';
 
 /// Helpers
-import { customContentCompany, sideImageCompany, contentData} from './data';
+import { sideImageCompany, contentData} from './data';
 
 /// Components
 import Tag from '@/components/Tag';
