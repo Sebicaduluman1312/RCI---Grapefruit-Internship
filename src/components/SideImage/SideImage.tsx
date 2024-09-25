@@ -1,3 +1,4 @@
+import Brochure from '../Brochure';
 import styles from './SideImage.module.scss';
 
 /// Helpers
@@ -30,9 +31,7 @@ const SideImage = (props: SideImageProps) => {
 
             {
                 downloadLink && 
-                    <a href={downloadLink}>
-                        Download brochure for more info
-                    </a>
+                    <Brochure downloadLink={downloadLink}/>
             }
         </div>
     );
