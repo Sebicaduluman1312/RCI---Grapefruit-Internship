@@ -1,0 +1,118 @@
+.wrapper{
+    width: 100%;
+
+    .item{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+
+        background: #FCFCFC;
+
+        padding: 18px 0 18px 0;
+
+        @media(max-width: 775px){
+            flex-direction: column;
+        }
+        
+        .image{
+            height: 300px;
+            width: 30%;
+            border-radius: 20px;
+
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+
+            .modal{
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                background: rgba(0, 0, 0, 0.5);
+
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                opacity: 0;
+
+                transition: opacity 0.3s ease, transform 0.3s ease;
+
+                button{
+                    font-size: 20px;
+                    color: white;
+                    background: rgba(0, 0, 0, 0.5);
+                    padding: 10px;
+    
+                    border-radius: 20px;
+                    border: 1px solid #ff6b00;
+    
+                    cursor: pointer;
+                }
+            }
+
+            &:hover .modal{
+                opacity: 1;
+            }
+
+
+            @media(max-width: 1025px){
+                height: 270px;
+                width: 270px;
+            }
+
+            @media(max-width: 775px){
+                width: 100%;
+            }
+        }
+
+        .content{
+            width: 80%;
+            margin: 50px 45px 50px 35px;
+
+            @media(max-width: 1025px){
+                margin: 15px;
+            }
+
+            .date{
+                display: flex;
+                align-items: center;
+                color: #8B8AA4;
+
+                svg{
+                    color: black;
+                    height: 24px;
+                    width: 24px;
+                    margin-right: 10px;
+                }
+            }
+
+            h3{
+                font-size: 24px;
+                font-weight: 500;
+                margin: 16px 0 16px 0;
+                padding: 0;
+
+                @media(max-width: 1025px){
+                    font-size: 20px;
+                }
+            }
+
+            p{
+                font-size: 20px;
+                color: #737373;
+                margin: 0;
+                padding: 0;
+
+                @media(max-width: 1025px){
+                    font-size: 18px;
+                }
+            }
+
+
+        }
+
+    }
+}
