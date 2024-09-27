@@ -31,11 +31,15 @@ const Statistics = (props: StatisticsProps) => {
                         <h4>{statistic.title}</h4>
                         <p>
                             {
+                                statistic.iso && 
+                                    <span className={styles.iso}>{statistic.iso}</span>
+                            }
+                            {
                                 statistic.leftString &&
                                     <span>{statistic.leftString}</span>
                             }
                             {
-                                hasStarted && <CountUp duration={5} end={statistic.number} />
+                                (hasStarted && statistic.number) && <CountUp duration={5} end={statistic.number} />
                             }
                             {
                                 statistic.rightString &&
