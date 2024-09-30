@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './Team.module.scss';
 
 // Helpers
-import { teamContent, linkData, teamPeople } from './data';
+import { teamContent, linkData, teamPeople, carouselSettings } from './data';
 
 // Components
 import Tag from '@/components/Tag';
@@ -22,7 +22,7 @@ const Team = () => {
                     </Link>
                 </p>
 
-                <HumanProfile team={teamPeople} />  
+                <HumanProfile team={teamPeople} settings={carouselSettings}/>  
 
                 <button>
                     View all team
