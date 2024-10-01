@@ -1,18 +1,25 @@
-import CustomContent from '@/components/CustomContent';
 import styles from './Executive.module.scss';
 
 /// Helpers
-import { heading, executiveOffice, internationalBusiness, consulting, financial, technology, energyMarkets, managementConsulting, settingsFull} from './data';
+import { heading, profiles, profile} from './data';
+import { useEffect, useState } from 'react';
 
 /// Components 
 import Link from 'next/link';
 import Heading from '@/components/Heading';
-import HumanProfile from '@/components/HumanProfile';
+import ModalProfile from '@/components/ModalProfile';
+import ProfileList from '@/components/ProfileList';
 
 
 const Executive = () => {
+    const [staffProfile, setStaffProfile] = useState(profile);
+    const [openModal, setOpenModal] = useState(false);
+
     return ( 
         <div className={styles.wrapper}>
+
+            {openModal &&  <ModalProfile setModal={setOpenModal} {...staffProfile}/>}
+
             <div className="container">
                 <Heading data={heading}/>
 
@@ -20,24 +27,12 @@ const Executive = () => {
                     View the team's organisational chart
                 </Link> 
 
-                <h2>RCI Holding Executive Office</h2>
-                <HumanProfile {...executiveOffice} />
+                {
+                    profiles.map((profile, index) => (
+                        <ProfileList setModal={setOpenModal} {...profile}/>
+                    ))
+                }
 
-                <h2>International Bussiness Support</h2>
-                <HumanProfile {...internationalBusiness} />
-
-                <h2>RCI Holding Pilliers Management</h2>
-                <HumanProfile {...consulting} />
-
-                <HumanProfile {...financial} />
-
-                <div className={styles.technology}>
-                    <HumanProfile {...technology} />
-                </div>
-
-                <HumanProfile {...energyMarkets} />
-
-                <HumanProfile {...managementConsulting} />
             </div>
         </div>
     );

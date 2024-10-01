@@ -10,7 +10,6 @@ import Hero from "@/components/Hero";
 import Executive from "@/page-sections/team/executive/Executive";
 
 
-
 export default function Contact() {
     return (
         <>
@@ -19,9 +18,10 @@ export default function Contact() {
                 description=''
                 showContact={false}
                 >
+                
 
                 <Hero data={slideTeam}/>
-                <Executive />
+                <Executive/>
             
 
             </BaseLayout>

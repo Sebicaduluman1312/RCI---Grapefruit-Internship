@@ -1,5 +1,5 @@
 import basicUser from '../assets/Vector.png';
-import { HumanProfile } from '@/components/HumanProfile/interface';
+import { HumanProfile } from '@/components/HumanCarousel/interface';
 
 export const carouselSettings = {
     dots: false,

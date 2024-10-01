@@ -1,14 +1,15 @@
-import styles from './HumanProfile.module.scss';
-
+import styles from './HumanCarousel.module.scss'
 /// Helpers
 import { HumanProfileProps } from './interface';
+
 
 /// Components
 import { Carousel } from 'antd';
 
-const HumanProfile = (props: HumanProfileProps) => {
+const HumanCarousel = (props: HumanProfileProps) => {
 
     const { team, subtitle, settings} = props;
+
 
     return ( 
         <div className={styles.wrapper}>
@@ -41,4 +42,4 @@ const HumanProfile = (props: HumanProfileProps) => {
     );
 }
  
-export default HumanProfile;
+export default HumanCarousel;

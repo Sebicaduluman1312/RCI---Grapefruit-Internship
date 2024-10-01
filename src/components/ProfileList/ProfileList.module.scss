@@ -1,0 +1,105 @@
+.wrapper{
+    width: 100%;
+
+    h4{
+        font-size: 36px;
+        margin: 40px 0 0 0;
+
+        @media (max-width: 850px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 26px;
+        }
+    }
+
+    h5{
+        font-size: 36px;
+        color: #FF6B00;
+        margin: 0;
+
+        @media (max-width: 850px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 600px) {
+            font-size: 26px;
+        }
+    }
+
+    .team{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: auto;
+        margin-bottom: 70px;
+
+        @media(max-width: 1050px){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media(max-width: 850px){
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media(max-width: 600px){
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+
+        .card{
+            width: 166px;
+            margin-top: 24px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            cursor: pointer;
+
+            @media(max-width: 650px){
+                width: 140px;
+            }
+
+            .image{
+                height: 160px;
+                width: 166px;
+                border-radius: 20px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background: #E2E2E2;
+
+                @media(max-width: 650px){
+                    width: 140px;
+                    height: 140px;
+                }
+            }
+
+            p{
+                font-size: 24px;
+                margin: 24px 0 0 0;
+
+                @media(max-width: 650px){
+                    font-size: 20px;
+                }
+            }
+
+            span{
+                font-size: 18px;
+                color: #FF6B00;
+                margin: 0;
+
+                @media(max-width: 650px){
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+    }
+
+
+}
