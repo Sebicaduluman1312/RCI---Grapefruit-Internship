@@ -11,7 +11,6 @@ import { Carousel } from 'antd';
 const ColabLogos = (props: ColabLogoProps) => {
 
     const { logos, settings } = props;
-    console.log(settings);
 
     return ( 
         <div className={styles.wrapper}>

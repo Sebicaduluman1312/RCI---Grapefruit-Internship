@@ -15,7 +15,7 @@ const Projects = () => {
 
                 {
                     projects.map((project, index) => (
-                        <DetailedProjects {...project}/>
+                        <DetailedProjects key={index} {...project}/>
                     ))
                 }
 
