@@ -4,6 +4,7 @@ import background3 from './assets/background04.png';
 import background4 from './assets/background05.png';
 import background5 from './assets/background06.png';
 import background6 from './assets/background07.png';
+import background7 from './assets/background08.png';
 
 export const slides = [
     {
@@ -68,5 +69,11 @@ export const slideFinance = [
     {
         title: 'Financial Advisory & Solutions',
         background: background6.src
+    }
+]
+export const slideClients = [
+    {
+        title: 'Work with us for the future',
+        background: background7.src
     }
 ]
