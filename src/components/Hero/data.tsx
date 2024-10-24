@@ -6,6 +6,7 @@ import background5 from './assets/background06.png';
 import background6 from './assets/background07.png';
 import background7 from './assets/background08.png';
 import background8 from './assets/background09.png';
+import background9 from './/assets/background10.png'
 
 export const slides = [
     {
@@ -83,5 +84,12 @@ export const slideCsr = [
     {
         title: 'CSR and Community Initiatives',
         background: background8.src
+    }
+]
+
+export const slideTeam = [
+    {
+        title: 'Our Executive Team',
+        background: background9.src
     }
 ]

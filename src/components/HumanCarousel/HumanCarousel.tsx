@@ -1,21 +1,25 @@
-import styles from './HumanProfile.module.scss';
-
+import styles from './HumanCarousel.module.scss'
 /// Helpers
 import { HumanProfileProps } from './interface';
-import { carouselSettings } from './data';
 
 
 /// Components
 import { Carousel } from 'antd';
 
-const HumanProfile = (props: HumanProfileProps) => {
+const HumanCarousel = (props: HumanProfileProps) => {
 
-    const { team, role } = props;
+    const { team, subtitle, settings} = props;
+
 
     return ( 
         <div className={styles.wrapper}>
 
-            <Carousel {...carouselSettings} className={styles.carousel}>
+            {
+                subtitle && 
+                    <h4>{subtitle}</h4>
+            }
+
+            <Carousel {...settings} className={styles.carousel}>
                 {
                     team.map((human, index) => (
                         <div key={index} className={styles.card}>
@@ -38,4 +42,4 @@ const HumanProfile = (props: HumanProfileProps) => {
     );
 }
  
-export default HumanProfile;
+export default HumanCarousel;

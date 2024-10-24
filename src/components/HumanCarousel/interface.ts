@@ -1,3 +1,5 @@
+import { CarouselProps } from 'antd';
+
 export type HumanProfile = {
     photo: string,
     name: string,
@@ -6,5 +8,6 @@ export type HumanProfile = {
 
 export interface HumanProfileProps{
     team: HumanProfile[],
-    role?: string
+    settings: CarouselProps,
+    subtitle?: string,
 }

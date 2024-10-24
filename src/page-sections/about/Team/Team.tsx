@@ -2,12 +2,11 @@ import Link from 'next/link';
 import styles from './Team.module.scss';
 
 // Helpers
-import { teamContent, linkData, teamPeople } from './data';
+import { teamContent, linkData, teamPeople, carouselSettings } from './data';
 
 // Components
 import Tag from '@/components/Tag';
-import HumanProfile from '@/components/HumanProfile';
-
+import HumanCarousel from '@/components/HumanCarousel';
 
 const Team = () => {
     return ( 
@@ -22,7 +21,7 @@ const Team = () => {
                     </Link>
                 </p>
 
-                <HumanProfile team={teamPeople} />  
+                <HumanCarousel team={teamPeople} settings={carouselSettings}/>  
 
                 <button>
                     View all team
