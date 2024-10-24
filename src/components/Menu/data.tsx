@@ -1,27 +1,27 @@
 export const primaryPageLinks = [ 
     {
         title: 'About RCI',
-        link: ''
+        link: '/about'
     },
     {
         title: 'Executive Team',
-        link: ''
+        link: '/team'
     },
     {
         title: 'Services',
-        link: ''
+        link: '/services'
     },
     {
         title: 'Our network of companies',
-        link: ''
+        link: '/network'
     },
     {
         title: 'Our clients',
-        link: ''
+        link: '/clients'
     },
     {
         title: 'News',
-        link: ''
+        link: '/news'
     }
 ];
 
@@ -37,21 +37,21 @@ export const secondaryPageLinks = [
     {
         title: 'Career and Opportunities',
         subtitle:'See our open positions and join us',
-        link: ''
+        link: '/careers'
     },
     {
         title: 'Investor Relations',
         subtitle:'Find out more about investing with RCI',
-        link: ''
+        link: '/finance'
     },
     {
         title: 'CSR Initiatives',
         subtitle:'Our initiatives to help',
-        link: ''
+        link: '/csr'
     },{
         title: 'Contact Us',
         subtitle:'Get in touch with us for new opportunities',
-        link: ''
+        link: '/contact'
     },
 ]
 

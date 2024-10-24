@@ -14,6 +14,7 @@ const Hero = (props: HeroProps) => {
     const { data } = props;
     const showSlider = data.length > 1;
 
+
     const SLIDE_TYPE = ({ slide }: { slide: SlideProps }) => {
 
         return(

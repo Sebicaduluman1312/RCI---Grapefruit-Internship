@@ -6,7 +6,7 @@ const secret = process.env.NEXTAUTH_SECRET;
 export async function middleware(req: NextRequest) {
 
     const token = await getToken({ req, secret }); /// extragem token-ul
-    const protectedRoutes = ['/about', '/contact'];
+    const protectedRoutes = ['/news', '/finance', '/clients', '/csr', '/team', '/network', '/services'];
 
     if (protectedRoutes.some(route => req.nextUrl.pathname.startsWith(route))) {
         if (!token) { /// daca tokenul nu e, nu e autentificat => ca redirectam

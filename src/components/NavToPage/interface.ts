@@ -3,6 +3,7 @@ export interface NavToPageProps {
         img: string,
         title: string,
         link: string,
-        btnText: string
+        btnText: string,
+        whitebg?: boolean
     }
 }

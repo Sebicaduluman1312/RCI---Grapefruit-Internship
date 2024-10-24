@@ -21,11 +21,11 @@ import Networks from '@/page-sections/home/Networks/Networks';
 
 export default function Home(){
 
-    const [ loading, setLoading ] = useState(false);
+    const [ loading, setLoading ] = useState(true);
 
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 5000);
+        setTimeout(() => setLoading(false), 3000);
     }, []);
 
     return (

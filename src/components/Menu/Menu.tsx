@@ -31,7 +31,7 @@ const Menu = (props: MenuProps) => {
                             primaryPageLinks.map((page, index) => (
                                 <li key={index}>
 
-                                    <Link href={''}>
+                                    <Link href={page.link} onClick={handleOutsideClick}>
                                         {page.title}
                                     </Link>
 
@@ -55,7 +55,7 @@ const Menu = (props: MenuProps) => {
                             secondaryPageLinks.map((page, index) => (
                                 <li key={index}>
 
-                                    <Link href={''}>
+                                    <Link href={page.link} onClick={handleOutsideClick}>
                                         {page.title}
                                     </Link>
 
@@ -69,7 +69,7 @@ const Menu = (props: MenuProps) => {
                             {
                                 policies.map((pol, index) => (
 
-                                    <Link key={index} href={''}>
+                                    <Link key={index} href={'/terms'} onClick={handleOutsideClick}>
                                         {pol.title}
                                     </Link>
 

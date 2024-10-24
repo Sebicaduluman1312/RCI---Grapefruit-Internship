@@ -80,7 +80,9 @@ const NavBar = (props: NavBarProps) => {
                 {
                     !openInput ? 
                     <div className={styles.logo}>
-                        <img src={logo.src} alt="logo" className='logo'/>
+                        <a href="/">
+                            <img src={logo.src} alt="logo" className='logo'/>
+                        </a>
                     </div> : 
                     <input autoFocus type="text" placeholder="Search" onChange={handleChangeInput}/>
                 }

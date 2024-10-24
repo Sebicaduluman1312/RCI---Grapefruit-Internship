@@ -24,7 +24,7 @@ const Footer = () => {
                         {
                             topicList.map((topic, index) => (
                                 <li key={index}>
-                                    <Link href={''}>
+                                    <Link href={topic.link}>
                                         {topic.topic}
                                     </Link>
                                     <TbCircleArrowRight/>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <ul className={styles.pages}>
                         {
                             pagesList.map((page, index) => (
-                                <li key={index}><Link href={'/contact'}>{page.pageName}</Link></li>
+                                <li key={index}><Link href={page.link}>{page.pageName}</Link></li>
                             ))
                         }
                     </ul>
@@ -48,7 +48,7 @@ const Footer = () => {
 
                         </li>
                         <li>
-                            <Link href={''}>
+                            <Link href={'https://ro.linkedin.com/company/romcapital-invest'}>
                                 Follow us on LinkedIn
                             </Link>
                             <FaLinkedin />
@@ -58,8 +58,8 @@ const Footer = () => {
                 <div className={styles.credentials}>
                         <p>© 2024 RBI Holding</p>
                         <div className={styles.policy}>
-                            <Link href={'/contact'}>Cookie Policy</Link>
-                            <Link href={'/contact'}>Privacy Policy</Link>
+                            <Link href={'/terms'}>Cookie Policy</Link>
+                            <Link href={'/terms'}>Privacy Policy</Link>
                         </div>
                 </div>
             </div>

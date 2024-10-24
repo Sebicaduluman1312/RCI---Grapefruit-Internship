@@ -5,49 +5,49 @@ export const logo = logoFooter.src;
 export const topicList = [
     {
         topic: 'RCI Financial Advisory & Solutions',
-        link: ''
+        link: '/finance'
     },
     {
         topic: 'RCI Consulting - Engineering',
-        link: ''
+        link: '/services'
     },
     {
         topic: 'RCI Energy markets',
-        link: ''
+        link: '/team'
     },
     {
         topic: 'RCI Digital Innovation & Technology',
-        link: ''
+        link: '/network'
     },
     {
         topic: 'RCI Management Consulting',
-        link: ''
+        link: '/team'
     },
 ]
 
 export const pagesList = [
     {
         pageName: 'About RCI',
-        link: ''
+        link: '/about'
     },
     {
         pageName: 'Services',
-        link: ''
+        link: '/services'
     },
     {
         pageName: 'CSR Initiatives',
-        link: ''
+        link: '/csr'
     },
     {
         pageName: 'News',
-        link: ''
+        link: '/news'
     },
     {
         pageName: 'Careers',
-        link: ''
+        link: '/careers'
     },
     {
         pageName: 'Our network of companies',
-        link: ''
+        link: '/network'
     }
 ]

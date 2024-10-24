@@ -1,3 +1,12 @@
+.whitebg{
+    background: white !important;
+    // padding-top: 40 !important;
+
+    .graybg{
+        background: #F1EFEF !important;
+    }
+}
+
 .wrapper{
     width: 100%;
 
@@ -46,8 +55,9 @@
             }
 
             h4{
+                width: 100%;
                 font-size: 32px;
-                margin: 0 0 0 5%;
+                margin: 0 3% 0 3%;
 
                 @media(max-width: 1000px){
                     font-size: 22px;
@@ -58,8 +68,9 @@
                 text-decoration: none;
                 color: white;
                 font-size: 20px;
+                width: 30%;
 
-                padding: 12px 20% 12px 20%;
+                padding: 12px 10% 12px 10%;
                 margin-right: 2%;
 
                 background: #ff6b00;
@@ -70,7 +81,7 @@
                 justify-content: center;
 
                 @media(max-width: 1000px){
-                    margin: 5% 5% 0 5%;
+                    margin: 5% 3% 0 3%;
                     padding: 12px 0 12px 0;
                     width: 100%;
                     font-size: 16px;
