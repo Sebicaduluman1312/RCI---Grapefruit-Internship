@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import { primaryPageLinks, secondaryPageLinks, policies, services } from './data';
 import { MenuProps } from './interface';
 
-
 /// COMPONENTS
 import { TbCircleArrowRight } from "react-icons/tb";
 import Link from 'next/link';
@@ -21,7 +20,7 @@ const Menu = (props: MenuProps) => {
         document.documentElement.style.overflowY = 'auto';
         document.body.style.overflowY = 'auto';
         callback();
-    }
+    }  
 
     return ( 
         <div className={classNames(styles.wrapper, show === true ? styles.active : styles.inactive)}>

@@ -2,6 +2,10 @@
 ///HELPERS
 import { slideAbout } from "@/components/Hero/data";
 import image from '../../page-sections/about/assets/europe.png';
+import { getSession } from 'next-auth/react';
+import { GetServerSidePropsContext } from 'next';
+
+
 
 /// COMPONENTS
 import BaseLayout from "@/components/BaseLayout";
@@ -18,6 +22,7 @@ import Discover from "@/page-sections/about/Discover/Discover";
 import Values from "@/page-sections/about/Values/Values";
 import History from "@/page-sections/about/History/History";
 import Team from "@/page-sections/about/Team/Team";
+
 
 
 export default function About() {
