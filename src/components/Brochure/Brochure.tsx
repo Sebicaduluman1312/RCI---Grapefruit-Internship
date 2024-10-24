@@ -14,14 +14,10 @@ const Brochure = (props: BrochureProps) => {
 
     return (
         <div className={styles.wrapper}>
-            <div className={classNames("container", styles.containerCenter)}>
-
-                <FilePdfSvg />
-                <a href={downloadLink} download>
-                    Download our Company brochure for more info
-                </a>
-
-            </div>
+            <FilePdfSvg />
+            <a href={downloadLink} download>
+                Download our Company brochure for more info
+            </a>
         </div>
     );
 }
