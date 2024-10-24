@@ -1,7 +1,7 @@
 import styles from './Networks.module.scss';
 
 // HELPERS
-import { btnData, headingDataNetworks, logos } from './data';
+import { btnData, headingDataNetworks, logos, carouselSettings } from './data';
 
 // COMPONENTS
 import Heading from '@/components/Heading';
@@ -14,7 +14,7 @@ const Networks = () => {
         <div className={styles.wrapper}>
             <div className="container">
                 <Heading data={headingDataNetworks}/>
-                <ColabLogos logos={logos}/>
+                <ColabLogos logos={logos} settings={carouselSettings}/>
                 <BaseButton {...btnData} />
             </div>
         </div>

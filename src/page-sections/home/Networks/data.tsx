@@ -1,3 +1,4 @@
+import { CarouselProps } from '@/components/ColabLogos/interface';
 import logo1 from './../assets/logo1.png';
 import logo2 from './../assets/logo2.png';
 import logo3 from './../assets/logo3.png';
@@ -25,7 +26,7 @@ export const logos = [
     logo4.src
 ]
 
-export const carouselSettings = {
+export const carouselSettings: CarouselProps = {
     dots: false,
     draggble: false,
     slidesToShow: 4,

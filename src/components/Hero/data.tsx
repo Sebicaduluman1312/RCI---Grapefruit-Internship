@@ -64,7 +64,6 @@ export const slideTerm = [
         background: background5.src
     }
 ]
-
 export const slideFinance = [
     {
         title: 'Financial Advisory & Solutions',
