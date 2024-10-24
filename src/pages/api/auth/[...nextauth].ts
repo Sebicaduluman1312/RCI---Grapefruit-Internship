@@ -45,7 +45,7 @@ export const authOptions: NextAuthOptions = {
             if(user) {
                 return true;
             } else {
-                return '/auth/signin?error=CredentialsSignin';
+                return false;
             }
         },
         async jwt({token, user, account}){
