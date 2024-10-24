@@ -57,7 +57,7 @@ const NavBar = (props: NavBarProps) => {
                     <div className={styles.logo}>
                         <img src={logo.src} alt="logo" className='logo'/>
                     </div> : 
-                    <input type="text" placeholder="Search" onChange={handleChangeInput}/>
+                    <input autoFocus type="text" placeholder="Search" onChange={handleChangeInput}/>
                 }
                 <div className={styles['navbar-actions']}>
                     

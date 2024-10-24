@@ -1,5 +1,14 @@
 @import '../../scss/utils/variables';
 
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 80%;
+	}
+}
+
 .navbar-content{
     width: 100%;
     display: flex;
@@ -22,17 +31,22 @@
     margin-top: 25px;
 
     input {
+        position: relative;
         height: 24px;
         margin-left: 20px;
-        width: 50%;
+        padding-bottom: 5px;
+        width: 80%;
         font-size: 18px;
-        border: none;
 
-        &:focus{
+        border: none;
+        border-bottom: 2px solid black;
+
+        &:focus {
             outline: none;
+            animation: border_anim 2s;
         }
-    
     }
+    
 
 }
 
