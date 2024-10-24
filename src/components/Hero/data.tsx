@@ -8,6 +8,7 @@ import background7 from './assets/background08.png';
 import background8 from './assets/background09.png';
 import background9 from './/assets/background10.png'
 import background10 from './assets/background11.png';
+import background11 from './assets/background12.png';
 
 export const slides = [
     {
@@ -99,5 +100,12 @@ export const slideNetwork = [
     {
         title: 'Our network of Companies',
         background: background10.src
+    }
+]
+
+export const slideServices = [
+    {
+        title: 'Our services and Activities',
+        background: background11.src
     }
 ]
